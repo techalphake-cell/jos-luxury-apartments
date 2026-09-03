@@ -39,7 +39,53 @@
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body>
-    <header></header>
+    <header>
+      <div class="site-header__container">
+        <a href="index.html" class="site-header__logo"
+          >Jos Baobab Luxury Apartments</a
+        >
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+          aria-label="Toggle navigation menu"
+        >
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
+        <nav class="primary-nav" id="primary-navigation" aria-label="Primary">
+          <ul class="primary-nav__list">
+            <li class="primary-nav__item">
+              <a href="index.html" class="primary-nav__link" aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li class="primary-nav__item">
+              <a href="apartments.html" class="primary-nav__link">Apartments</a>
+            </li>
+            <li class="primary-nav__item">
+              <a href="gallery.html" class="primary-nav__link">Gallery</a>
+            </li>
+            <li class="primary-nav__item">
+              <a href="amenities.html" class="primary-nav__link">Amenities</a>
+            </li>
+            <li class="primary-nav__item">
+              <a href="activities.html" class="primary-nav__link">Activities</a>
+            </li>
+            <li class="primary-nav__item">
+              <a href="reviews.html" class="primary-nav__link">Reviews</a>
+            </li>
+            <li class="primary-nav__item">
+              <a href="contact.html" class="primary-nav__link">Contact</a>
+            </li>
+            <li class="primary-nav__item primary-nav__item--lang">
+              <a href="de/index.html">Deutsch</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <main id="main-content"></main>
     <footer></footer>
     <script src="assets/js/main.js" defer></script>
