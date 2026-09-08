@@ -1,0 +1,61 @@
+:root {
+  /* Breakpoints (reference only — not usable as var() in media queries)
+   mobile: 0
+   tablet: 768px
+   desktop: 1024px */
+
+  /*-colors-raw palette-*/
+  --color-sand: #ede4d3;
+  --color-bark: #2b2118;
+  --color-teal: #1e5952;
+  --color-gold: #c89b3c;
+  --color-clay: #a85c36;
+  --color-white: #ffffff;
+
+  /*-colors-semantic roles-*/
+  --color-background: var(--color-sand);
+  --color-text: var(--color-bark);
+  --color-primary: var(--color-teal);
+  --color-accent: var(--color-gold);
+  --color-secondary: var(--color-clay);
+  --color-surface: var(--color-white);
+
+  /*-Typography-*/
+  --font-heading: "Fraunces", serif;
+  --font-body: "Karla", sans-serif;
+
+  /*-Type scale-*/
+  --font-size-xs: 0.75rem; /* 12px */
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-base: 1rem; /* 16px */
+  --font-size-md: 1.125rem; /* 18px */
+  --font-size-lg: 1.5rem; /* 24px */
+  --font-size-xl: 2rem; /* 32px */
+  --font-size-2xl: 2.5rem; /* 40px */
+  --font-size-3xl: 3rem; /* 48px */
+
+  /*-weights and line height-*/
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --line-height-tight: 1.2; /* headings*/
+  --line-height-base: 1.6; /* body*/
+
+  /*spacing scale*/
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+
+  /*radius and transitions*/
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --transition-base: 200ms ease; /*hover states*/
+  --transition-slow: 400ms ease;
+}
