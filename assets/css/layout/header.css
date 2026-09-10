@@ -41,15 +41,12 @@
 }
 
 .primary-nav--is-open {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: var(--space-2);
-  font-size: var(--font-size-base);
+  display: block;
 }
 .primary-nav__list {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: var(--space-3);
   list-style: none;
 }
@@ -68,14 +65,13 @@
     display: none;
   }
   .primary-nav {
-    display: flex;
+    display: block;
     flex: 1;
   }
   .primary-nav__list {
     flex-direction: row;
     align-items: center;
     gap: var(--space-5);
-    flex: 1;
   }
   .primary-nav__item--lang {
     margin-inline-start: auto;
