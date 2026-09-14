@@ -49,18 +49,27 @@
   align-items: center;
   gap: var(--space-3);
   list-style: none;
+  margin-left: var(--space-6);
 }
 .primary-nav__link {
   color: var(--color-text);
   text-decoration: none;
   display: block;
+  padding: var(--space-2);
+}
+.primary-nav__link:hover {
+  color: var(--color-accent);
+}
+.primary-nav__link:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
 }
 [aria-current="page"] {
   color: var(--color-primary);
   font-weight: var(--font-weight-medium);
 }
 
-@media (min-width: 960px) {
+@media (min-width: 930px) {
   .nav-toggle {
     display: none;
   }
@@ -73,6 +82,7 @@
     align-items: center;
     gap: var(--space-5);
   }
+
   .primary-nav__item--lang {
     margin-inline-start: auto;
   }
