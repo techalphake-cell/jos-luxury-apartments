@@ -4,6 +4,9 @@ body {
   line-height: var(--line-height-base);
   color: var(--color-text);
   background: var(--color-background);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 h1,
 h2,
@@ -33,4 +36,7 @@ main a {
   color: var(--color-primary);
   text-decoration: underline;
   text-underline-offset: 0.15em;
+}
+main {
+  flex: 1;
 }
