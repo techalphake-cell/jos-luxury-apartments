@@ -1,0 +1,20 @@
+.hero__container {
+  display: grid;
+  gap: var(--space-6);
+  padding: var(--space-6);
+}
+.hero__media img {
+  width: 100%;
+  border-radius: var(--radius-lg);
+}
+.hero__actions {
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+@media (min-width: 930px) {
+  .hero__container {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
