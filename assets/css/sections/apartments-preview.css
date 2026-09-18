@@ -1,0 +1,19 @@
+.apartments-preview__container {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+}
+.apartments-preview__grid {
+  display: grid;
+  gap: var(--space-6);
+}
+.apartments-preview-title {
+  text-align: center;
+}
+@media (min-width: 930px) {
+  .apartments-preview__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
