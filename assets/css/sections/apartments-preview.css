@@ -9,7 +9,7 @@
   display: grid;
   gap: var(--space-6);
 }
-.apartments-preview-title {
+.apartments-preview__title {
   text-align: center;
 }
 @media (min-width: 930px) {
