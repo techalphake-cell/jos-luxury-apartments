@@ -1,0 +1,28 @@
+.testimonial {
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+  margin: 0;
+}
+.testimonial__rating {
+  color: var(--color-gold);
+  margin-block-end: var(--space-3);
+  letter-spacing: 2px;
+}
+.testimonial__quote {
+  margin: 0 0 var(--space-4);
+  font-style: italic;
+}
+.testimonial__author {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-size-sm);
+}
+.testimonial___name {
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text);
+}
+.testimonial__location {
+  color: var(--color-text);
+  opacity: 0.7;
+}

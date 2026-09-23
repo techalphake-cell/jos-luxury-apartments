@@ -1,0 +1,24 @@
+.cta-band {
+  background-image:
+    linear-gradient(rgba(43, 33, 24, 0.7), rgba(43, 33, 24, 0.7)),
+    url(/assets/images/apartment.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  text-align: center;
+  margin: var(--space-4);
+}
+.cta-band__container {
+  max-width: 700px;
+  margin-inline: auto;
+  padding: var(--space-6) var(--space-4);
+}
+.cta-band__title,
+.cta-band {
+  color: var(--color-sand);
+}
+.cta-band__description {
+  margin-block-end: var(--space-5);
+}
