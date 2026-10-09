@@ -51,7 +51,7 @@
         <button
           class="nav-toggle"
           aria-expanded="false"
-          aria-controls="primary-navigation"
+          aria-controls="Navigation umschalten"
           aria-label="Toggle navigation menu"
         >
           <span class="nav-toggle__bar"></span>
@@ -93,31 +93,401 @@
       </div>
     </header>
     <main id="main-content">
+      <!--Hero Section -->
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero__container">
           <div class="hero__content">
             <h1 class="hero__title" id="hero-title">
-              A Private Stretch of Diani, All Your Own
+              Ihr privates Stück Diani Beach, ganz für Sie allein
             </h1>
             <p class="hero__description">
-              Solar-powered apartments on a quiet estate, moments from one of
-              Africa's most beautiful beaches.
+              Solarbetriebene Apartments auf einem ruhigen Anwesen, nur wenige
+              Augenblicke von einem der schönsten Strände Afrikas entfernt.
             </p>
             <div class="hero__actions">
               <a href="apartments.html" class="btn btn--primary"
-                >View Apartments</a
+                >Apartments ansehen</a
               >
-              <a href="contact.html" class="btn btn--secondary">Contact Us</a>
+              <a href="contact.html" class="btn btn--secondary"
+                >Kontaktieren Sie uns</a
+              >
             </div>
           </div>
           <div class="hero__media">
             <img
-              src="https://placehold.co/1200x900?text=Hero+Photo"
-              alt="Baobab tree beside the pool at Jos Baobab Luxury Apartments"
+              src="../assets/images/apartment.jpg"
+              alt="Affenbrotbaum am Pool der Jos Baobab Luxury Apartments"
               class="hero__image"
               fetchpriority="high"
             />
           </div>
+        </div>
+      </section>
+
+      <!--Apartment preview section(two bedroom & one bedroom)-->
+      <section
+        class="apartments-preview"
+        aria-labelledby="apartments-preview__title"
+      >
+        <div class="apartments-preview__container">
+          <h2 id="apartments-preview__title" class="apartments-preview__title">
+            Unsere Apartments entdecken
+          </h2>
+          <div class="apartments-preview__grid">
+            <!--Two bedroom card-->
+            <article class="card">
+              <img
+                src="../assets/images/apartment.jpg"
+                alt="Apartment mit zwei Schlafzimmern"
+                class="card__image"
+                loading="lazy"
+              />
+              <div class="card__body">
+                <h3 class="card__title">Apartment mit zwei Schlafzimmern</h3>
+                <p class="card__description">
+                  Solarbetrieben mit großzügigem Balkon, kostenlosem WLAN und
+                  voll ausgestatteter Küche.
+                </p>
+                <a href="../de/apartments.html" class="btn btn--secondary"
+                  >Details anzeigen</a
+                >
+              </div>
+            </article>
+
+            <!--One bedroom card-->
+            <article class="card">
+              <img
+                src="../assets/images/apartment.jpg"
+                alt="Apartment mit einem Schlafzimmer"
+                class="card__image"
+                loading="lazy"
+              />
+              <div class="card__body">
+                <h3 class="card__title">Apartment mit einem Schlafzimmer</h3>
+                <p class="card__description">
+                  Solarbetrieben mit großzügigem Balkon, kostenlosem WLAN und
+                  voll ausgestatteter Küche.
+                </p>
+                <a href="../de/apartments.html" class="btn btn--secondary"
+                  >Details anzeigen</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!--Amenities Highlights-->
+      <section class="amenities-highlights" aria-labelledby="amenities-title">
+        <div class="amenities-highlights__container">
+          <h2 id="amenities-title" class="amenities-highlights__title">
+            Ausstattung & Highlights der Unterkunft
+          </h2>
+          <ul class="amenities-highlights__grid">
+            <!--Swimming pool-->
+            <li class="amenity">
+              <svg
+                class="amenity__icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path d="M2 8c1.5-2 3.5-2 5 0s3.5 2 5 0 3.5-2 5 0 3.5 2 5 0" />
+                <path d="M2 14c1.5-2 3.5-2 5 0s3.5 2 5 0 3.5-2 5 0 3.5 2 5 0" />
+                <path d="M2 20c1.5-2 3.5-2 5 0s3.5 2 5 0 3.5-2 5 0 3.5 2 5 0" />
+              </svg>
+              <h3 class="amenity__title">Großer Swimmingpool</h3>
+              <p class="amenity__description">
+                Großzügiger Außenpool, ideal für morgendliche Bahnen oder
+                entspannte Nachmittage.
+              </p>
+            </li>
+
+            <!--Tropical garden-->
+            <li class="amenity">
+              <svg
+                class="amenity__icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path d="M4 20c8 0 14-6 16-16-10 2-16 8-16 16z" />
+                <path d="M4 20c2-4 6-8 12-11" />
+              </svg>
+              <h3 class="amenity__title">3.125 m² Tropenpark</h3>
+              <p class="amenity__description">
+                Weitläufiges, ruhiges Privatgrundstück für einen friedlichen
+                Rückzugsort an der Küste.
+              </p>
+            </li>
+
+            <!--Beach & Shuttle-->
+            <li class="amenity">
+              <svg
+                class="amenity__icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <rect x="3" y="6" width="18" height="10" rx="2" />
+                <line x1="3" y1="12" x2="21" y2="12" />
+                <circle cx="7" cy="19" r="1.5" />
+                <circle cx="17" cy="19" r="1.5" />
+              </svg>
+              <h3 class="amenity__title">Kostenloser Strand- & Golf-Shuttle</h3>
+              <p class="amenity__description">
+                Tägliche kostenfreie Transfers zum Diani Beach (1 km entfernt)
+                und zum Golfplatz.
+              </p>
+            </li>
+
+            <!--High speed internet-->
+            <li class="amenity">
+              <svg
+                class="amenity__icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path d="M2 8.5a15 15 0 0 1 20 0" />
+                <path d="M5.5 12a10 10 0 0 1 13 0" />
+                <path d="M9 15.5a5 5 0 0 1 6 0" />
+                <circle
+                  cx="12"
+                  cy="19"
+                  r="1"
+                  fill="currentColor"
+                  stroke="none"
+                />
+              </svg>
+              <h3 class="amenity__title">Glasfaser-WLAN & LAN-Anschluss</h3>
+              <p class="amenity__description">
+                Unterbrechungsfreies Highspeed-Internet in jedem Apartment für
+                nahtlose Konnektivität.
+              </p>
+            </li>
+
+            <!--Air conditioning & Entertainment-->
+            <li class="amenity">
+              <svg
+                class="amenity__icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <rect x="3" y="5" width="18" height="12" rx="2" />
+                <line x1="9" y1="21" x2="15" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg>
+              <h3 class="amenity__title">Klimaanlage & Smart-TV</h3>
+              <p class="amenity__description">
+                Klimatisierte Wohnbereiche, ausgestattet mit modernen Smart-TVs
+                für Streaming.
+              </p>
+            </li>
+
+            <!--Kitchen & Dining-->
+            <li class="amenity">
+              <svg
+                class="amenity__icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path d="M4 11h16v3a6 6 0 0 1-6 6H10a6 6 0 0 1-6-6z" />
+                <line x1="2" y1="11" x2="22" y2="11" />
+                <path d="M8 11V7" />
+                <path d="M16 11V7" />
+              </svg>
+              <h3 class="amenity__title">Voll ausgestattete Küche</h3>
+              <p class="amenity__description">
+                Inklusive Gasherd, Backofen, Mikrowelle, Kaffeemaschine, Toaster
+                und Wasserspender.
+              </p>
+            </li>
+
+            <!--Solar Power & back up-->
+            <li class="amenity">
+              <svg
+                class="amenity__icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <circle cx="12" cy="12" r="4" />
+                <line x1="12" y1="2" x2="12" y2="5" />
+                <line x1="12" y1="19" x2="12" y2="22" />
+                <line x1="2" y1="12" x2="5" y2="12" />
+                <line x1="19" y1="12" x2="22" y2="12" />
+                <line x1="4.5" y1="4.5" x2="6.5" y2="6.5" />
+                <line x1="17.5" y1="17.5" x2="19.5" y2="19.5" />
+                <line x1="4.5" y1="19.5" x2="6.5" y2="17.5" />
+                <line x1="17.5" y1="6.5" x2="19.5" y2="4.5" />
+              </svg>
+              <h3 class="amenity__title">100 % Solar- & Brunnen-Backup</h3>
+              <p class="amenity__description">
+                Garantierte Strom- und Frischwasserversorgung rund um die Uhr,
+                unabhängig von öffentlichen Ausfällen.
+              </p>
+            </li>
+
+            <!--Eco House keeping & Family-->
+            <li class="amenity">
+              <svg
+                class="amenity__icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  d="M12 3l1.5 4.5L18 9l-4.5 1.5L12 15l-1.5-4.5L6 9l4.5-1.5z"
+                />
+                <path
+                  d="M19 15l.7 2.1L22 18l-2.3.9L19 21l-.7-2.1L16 18l2.3-.9z"
+                />
+              </svg>
+              <h3 class="amenity__title">Öko-Reinigung & Wäscheservice</h3>
+              <p class="amenity__description">
+                Chemiefreie Dampfreinigung mit frischen Handtüchern und
+                Bettwäsche alle 3 Tage.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--Reviews Teaser section-->
+      <section class="reviews-teaser" aria-labelledby="reviews-teaser-title">
+        <div class="reviews-teaser__container">
+          <h2 id="reviews-teaser-title" class="reviews-teaser__title">
+            Gästebewertungen
+          </h2>
+          <div class="reviews-teaser__grid">
+            <!--Testimonials-->
+            <figure class="testimonial">
+              <div
+                class="testimonial__rating"
+                role="img"
+                aria-label="5 von 5 Sternen"
+              >
+                ★★★★★
+              </div>
+              <blockquote class="testimonial__quote">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptates excepturi ipsam laudantium blanditiis sapiente,
+                  numquam at praesentium accusantium eligendi, delectus, nostrum
+                  illum sit magnam veniam nam libero. Magni, rerum ut!
+                </p>
+              </blockquote>
+              <figcaption class="testimonial__author">
+                <span class="testimonial__name">Paul Schmetzer</span>
+                <span class="testimonial__location">Deutschland</span>
+              </figcaption>
+            </figure>
+
+            <!--Testimonials-->
+            <figure class="testimonial">
+              <div
+                class="testimonial__rating"
+                role="img"
+                aria-label="5 von 5 Sternen"
+              >
+                ★★★★★
+              </div>
+              <blockquote class="testimonial__quote">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptates excepturi ipsam laudantium blanditiis sapiente,
+                  numquam at praesentium accusantium eligendi, delectus, nostrum
+                  illum sit magnam veniam nam libero. Magni, rerum ut!
+                </p>
+              </blockquote>
+              <figcaption class="testimonial__author">
+                <span class="testimonial__name">Paul Schmetzer</span>
+                <span class="testimonial__location">Deutschland</span>
+              </figcaption>
+            </figure>
+
+            <!--Testimonials-->
+            <figure class="testimonial">
+              <div
+                class="testimonial__rating"
+                role="img"
+                aria-label="5 von 5 Sternen"
+              >
+                ★★★★★
+              </div>
+              <blockquote class="testimonial__quote">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptates excepturi ipsam laudantium blanditiis sapiente,
+                  numquam at praesentium accusantium eligendi, delectus, nostrum
+                  illum sit magnam veniam nam libero. Magni, rerum ut!
+                </p>
+              </blockquote>
+              <figcaption class="testimonial__author">
+                <span class="testimonial__name">Paul Schmetzer</span>
+                <span class="testimonial__location">Deutschland</span>
+              </figcaption>
+            </figure>
+          </div>
+          <a href="../de/reviews.html" class="btn btn--secondary"
+            >Alle Bewertungen lesen</a
+          >
+        </div>
+      </section>
+
+      <!--Cta Band Section-->
+      <section class="cta-band" aria-labelledby="cta-band-title">
+        <div class="cta-band__container">
+          <h2 id="cta-band-title" class="cta-band__title">
+            Ihr Traumurlaub erwartet Sie
+          </h2>
+          <p class="cta-band__description">Erleben Sie nachhaltigen Luxus</p>
+          <a href="../de/contact.html" class="btn btn--primary"
+            >Jetzt Aufenthalt buchen</a
+          >
         </div>
       </section>
     </main>
