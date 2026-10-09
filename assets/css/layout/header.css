@@ -1,6 +1,9 @@
 .site-header {
   background: var(--color-surface);
   border-bottom: 1px solid var(--color-sand);
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Keeps the header above other page elements */
 }
 .site-header__container {
   display: flex;

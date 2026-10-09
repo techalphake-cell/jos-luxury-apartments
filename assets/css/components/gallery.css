@@ -5,24 +5,23 @@
   scroll-snap-type: x mandatory;
   border-radius: var(--radius-lg);
   -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
 }
 .gallery::-webkit-scrollbar {
   display: none;
 }
-.gallery::-webkit-scrollbar {
-  display: none;
-}
+
 .gallery__image {
   flex: 0 0 85%;
   scroll-snap-align: center;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 3 / 2;
   object-fit: cover;
   border-radius: var(--radius-md);
 }
 @media (min-width: 930px) {
   .gallery__image {
     flex: 0 0 45%;
-    min-width: 670px;
+    max-width: 500px;
   }
 }
 .gallery-controls {

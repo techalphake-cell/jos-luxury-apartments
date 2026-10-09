@@ -2,7 +2,7 @@
   background: var(--color-primary);
   color: var(--color-sand);
   text-align: center;
-  padding-block: var(--space-6);
+  padding-block: var(--space-3);
 }
 .page-intro h1 {
   color: var(--color-sand);
